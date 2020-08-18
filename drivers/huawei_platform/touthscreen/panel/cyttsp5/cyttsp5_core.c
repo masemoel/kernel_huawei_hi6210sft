@@ -5893,7 +5893,7 @@ static int fb_notifier_callback(struct notifier_block *self,
                     }
                 }
             }
-        } else if (*blank == FB_BLANK_POWERDOWN) || *blank == FB_BLANK_NORMAL) {
+        } else if (*blank == FB_BLANK_POWERDOWN) {
             TS_LOG_INFO("%s: POWERDOWN!\n", __func__);
             if(cd->cpdata->has_holster == 1){
                 TS_LOG_INFO("%s: This Phone has holster,then suspend.\n", __func__);
