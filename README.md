@@ -1,6 +1,6 @@
 ![crDroid](https://camo.githubusercontent.com/66222527ac34ef135635339adaa9352a479ba331/68747470733a2f2f637264726f69642e6e65742f696d672f6c6f676f2e706e67 "crDroid")
 
-crDroid 3.8.9 for the Huawei P8 Lite (alice)
+crDroid 4.7.2 (Android 8.1) for the Huawei P8 Lite (alice)
 
 # Sources needed
 --> Device tree <--
@@ -9,7 +9,7 @@ This kernel is intended to be used with this device tree repo:
 
 https://github.com/masemoel/device_huawei_hi6210sft
 
-branch: crDroid_n
+branch: crDroid_O
 
 --> Vendor <--
 
@@ -17,13 +17,13 @@ This kernel is intented to be used with this vendor repo:
 
 https://github.com/masemoel/vendor_huawei_alice
 
-branch: crDroid_n
+branch: crDroid_O
 
 --> Manifest <--
 
 I built crDroid with this manifest:
 
-https://github.com/masemoel/local_manifests/blob/master/alice_nougat.xml
+https://github.com/masemoel/local_manifests/blob/master/alice_o.xml
 
 It has all the necessary repos for alice.
 
@@ -32,10 +32,8 @@ Download crDroid's source and alice's required stuff (see my attached manifest).
 
 ```bash
 . build/envsetup.sh
-lunch lineage_alice-userdebug
-mka bacon
+brunch alice
 ```
-NOTE: patches will automatically be applied when running envsetup.sh .
 
 Huawei P8Lite detailed specifications:
 ======================================
